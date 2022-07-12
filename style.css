@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+}
+.main-container__division {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 1s;
+}
+.main-container > :first-child {
+  background-color: #00ffff;
+  background-image: url("https://medieval.gumlet.io/wp-content/uploads/2014/10/medieval-images-of-death.jpg");
+}
+.main-container > :nth-child(2) {
+  background-color: #00dddd;
+  background-image: url("https://c8.alamy.com/comp/T2AT7T/gothic-medieval-art-in-the-national-art-museum-of-cataloniabarcelonaspainanonymous-catalan-tables-of-the-martyrdom-of-saint-lucia-1300-ac-T2AT7T.jpg");
+}
+.main-container > :nth-child(3) {
+  background-color: #00bbbb;
+  background-image: url("https://3.bp.blogspot.com/-YRsrT2Di3JI/WgizLuZQMLI/AAAAAAAAAOU/KOek2mBxWGgolIELL9WQpuI8GXut0Hd3gCLcBGAs/s1600/main-qimg-e05664925d0c5bd589bf98ca87a3c1c8-c.jpg");
+}
+.main-container > :nth-child(4) {
+  background-color: #009999;
+  background-image: url("https://artlogic-res.cloudinary.com/w_1200,h_1200,c_limit,f_auto,fl_lossy,q_auto:good/ws-samfogg/usr/images/exhibitions/group_images_override/29/17531_square.jpg");
+}
+.main-container > :last-child {
+  background-color: #007777;
+  background-image: url("https://media.istockphoto.com/illustrations/battle-of-mhldorf-on-september-28-lithograph-published-1880-illustration-id155139372?k=20&m=155139372&s=612x612&w=0&h=WxO_n-lmcb4k445U_x5q6r1V4aTUTbp2SZX2Q_g1a4s=");
+}
+.main-container__division span {
+  bottom: 0;
+  position: absolute;
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: 900;
+  opacity: 0;
+  transition: 1s;
+}
+
+.main-container__division:hover {
+  background-color: black;
+  color: white;
+  flex: 5;
+}
+
+.main-container__division:hover span {
+  transform: rotate(-360deg);
+  transition: 3s;
+  opacity: 1;
+  display: inline;
+  bottom: 50%;
+}
